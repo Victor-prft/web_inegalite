@@ -39,3 +39,34 @@ footer p {
     margin-left: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+header {
+    background-color: #f4f4f4;
+    padding: 1px;
+    text-align: center;
+
+}
+
+nav ol {
+    list-style: none;
+    padding: 0;
+}
+
+nav ol li {
+    display: inline;
+    margin: 1%;
+}
+
+nav ol li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.logoheader{
+    width: clamp(50px,5vw,30vw);
+    height: auto;   
+    margin: 0px;    
+    position: relative;
+    top: 10px;
+}
