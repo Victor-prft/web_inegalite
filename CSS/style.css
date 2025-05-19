@@ -1,0 +1,30 @@
+header {
+    background-color: #f4f4f4;
+    padding: 1px;
+    text-align: center;
+
+}
+
+nav ol {
+    list-style: none;
+    padding: 0;
+}
+
+nav ol li {
+    display: inline;
+    margin: 1%;
+}
+
+nav ol li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.logoheader{
+    width: clamp(50px,5vw,30vw);
+    height: auto;         /* hauteur proportionnelle */
+    margin: 0px;    /* 20px de marge verticale, centré horizontalement */
+    position: relative;
+    top: 10px;/* ou absolute / fixed / sticky selon le besoin */
+}
