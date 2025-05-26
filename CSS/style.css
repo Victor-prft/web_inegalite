@@ -1,3 +1,7 @@
+html{
+    margin: 0;
+}
+
 footer {
     background-color: #f4f4f4;
     display: flex;
@@ -40,12 +44,6 @@ footer p {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-header {
-    background-color: #f4f4f4;
-    padding: 1px;
-    text-align: center;
-
-}
 
 nav ol {
     list-style: none;
@@ -63,10 +61,119 @@ nav ol li a {
     font-weight: bold;
 }
 
-.logoheader{
-    width: clamp(50px,5vw,30vw);
-    height: auto;   
-    margin: 0px;    
-    position: relative;
-    top: 10px;
+#logoheader img {
+    height: 50px;
+    width: auto;
+}
+
+.logofooter{
+    width: clamp(5px,2vw,3vw);
+    height: auto;
+}
+
+#header-container{
+    display: flex;
+    align-items: center; /* Pour centrer verticalement */
+    padding: 10px 8% 5px 6%;
+    background-color: #f5f5f5; /* exemple de fond */
+}
+
+
+#headerDroite{
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 1%;
+    flex-grow: 1;
+}
+
+#headerGauche{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.liengauche{
+    display: flex;
+    gap: 1%;
+}
+
+.boutonheader{
+    padding: 8px 16px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+    background-color: white;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.boxtitre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.titre {
+    display: flex;
+    flex: 1 1 300px;
+    max-width: 500px;
+}
+
+#title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+}
+
+#description {
+    font-size: 1em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.photoacceuil{
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    margin-top: 3%;
+    max-width: 500px;
+    width: 20%;
+    min-width: 200px;
+}
+
+#imgaccueiltitre{
+    display: flex;
+    height: auto;
+    width: 75%;
+    max-width: 500px;
+
+
 }
