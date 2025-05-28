@@ -174,8 +174,6 @@ body {
     height: auto;
     width: 75%;
     max-width: 500px;
-
-
 }
 
 
@@ -193,65 +191,97 @@ body {
 
 .faits-container {
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .fait {
+    flex: 1 1 45%; /* prend environ 45% de la largeur */
+    flex-direction: row;
+    align-items: center;
+    min-width: 300px;
+
+}
+
+.texte_fait {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.photo_fait{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 45%;
-}
-
-.texte {
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-.image-placeholder {
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
     width: 100%;
-    height: 200px;
-    background-color: #ddd;
-    border: 1px solid #aaa;
-    position: relative;
-}
 
-.image-placeholder::before, .image-placeholder::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
-
-.image-placeholder::before {
-    border-left: 1px solid #666;
-    border-bottom: 1px solid #666;
-    transform: rotate(45deg);
-}
-
-.image-placeholder::after {
-    border-left: 1px solid #666;
-    border-top: 1px solid #666;
-    transform: rotate(-45deg);
+.image-fait{
+    display: flex;
+    gap: 5px;
+    height: auto;
+    width: 50%;
 }
 
 .chiffres-cles {
-    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
 }
 
-.grille-chiffres {
+.grille {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-    max-width: 600px;
-    margin: 0 auto;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
-.grille-chiffres span {
-    font-size: 18px;
+.itemclé {
+    flex: 1 1 45%; /* prend environ 45% de la largeur */
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 16px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+
+.approbations {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.approbations-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.approbation {
+    width: 250px;
+}
+
+.approbation img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.nom {
+    font-size: 13px;
+    color: #555;
 }
