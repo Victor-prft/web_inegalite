@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Quiz Inégalité</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript" src="../JS/script.js" ></script>
+</head><!-- Fin de la balise d'entête -->
+<body><!-- Début du code de la page web -->
+<header>
+    <div id="header-container">
+        <div id="headerGauche">
+            <a id="logoheader"href="accueil.html"><img src = "/Img/logosite.png" alt = "logo"></a>
+            <a href="accueil.html">Accueil</a>
+            <a href="index.html">Index</a>
+            <a href="carte.html">Pays et territoires</a>
+        </div>
+        <div id ="headerDroite">
+            <a class = "boutonheader" href="classement.html">Voir le classement</a>
+            <a class = "boutonheader" href="contact.html">A propos</a>
+        </div>
+    </div>
+</header>
+<form method="post" name="Quiz" action="#" class="box" id="QuizId" onsubmit="return false">
+    <fieldset  id="informations">
+        <legend>Vos informations</legend>
+        <div>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+        </div>
+        <div>
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+        </div>
+        <div>
+            <label for="date_naissance">Date de naissance :</label>
+            <input type="date" id="date_naissance" name="date_naissance" required>
+        </div>
+        <div>
+            <label for="mail">Adresse mail :</label>
+            <input type="email" id="mail" name="mail" required>
+        </div>
+        <div>
+            <label for="statut">Statut :</label>
+            <select id="statut" name="statut" required>
+                <option value="" disabled selected>Choisissez un statut</option>
+                <option value="etudiant">Étudiant</option>
+                <option value="developpeur">Développeur</option>
+                <option value="entrepreneur">Entrepreneur</option>
+            </select>
+        </div>
+        <div>
+            <input type="button" value="Commencer le quiz" class="quiz-button" onclick="quizConfirm()">
+        </div>
+    </fieldset>
+    <fieldset class="quiz" style="display:none;" id="quiz">
+        <legend>Quiz sur les Inégalités</legend>
+        <ol>
+            <li class="questions_style">Quelle proportion des richesses mondiales est détenue par les 10 % les plus riches ?
+                <ul class="questions">
+                    <li>
+                        <input type="radio" id="q1_1" name="q1" value="a">
+                        <label for="q1_1" class="btn_radio">Environ 75 %</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="q1_2" name="q1" value="b">
+                        <label for="q1_2" class="btn_radio">Environ 40 %</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="q1_3" name="q1" value="c">
+                        <label for="q1_3" class="btn_radio">Environ 20%</label>
+                    </li>
+                </ul>
+            </li>
+            <li class="questions_style">Parmi ces continents, lequel a le taux de pauvreté extrême le plus élevé ?
+                <ul class="questions">
+                    <li>
+                        <input type="checkbox" id="q2_1" name="q2[]" value="a">
+                        <label for="q2_1" class="btn_check">Amérique du Nord</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="q2_2" name="q2[]" value="b">
+                        <label for="q2_2" class="btn_check">Asie</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="q2_3" name="q2[]" value="c">
+                        <label for="q2_3" class="btn_check">Afrique subsaharienne</label>
+                    </li>
+                </ul>
+            </li>
+            <li>Donnez la plus grand inégalités :<br>
+                <textarea id="q3" name="q3" required></textarea>
+            </li>
+        </ol>
+
+    </fieldset>
+    <div>
+        <button class="quiz" type="submit">Envoyer</button>
+    </div>
+</form>
+<main class="box">
+    <table id="result">
+        <caption>Résultats du Quiz</caption>
+        <thead>
+        <tr>
+            <th>Essai</th>
+            <th>Score</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Les résultats du quiz seront ajoutés ici dynamiquement -->
+        </tbody>
+    </table>
+</main>
+<br>
+<footer>
+    <div class ="logofooter"><img src="/Img/logosite.png" alt="Logo"></div>
+    <nav class="footer-nav">
+        <a href="accueil.html">Accueil</a>
+        <a href="index.html">Index</a>
+        <a href="carte.html">Pays et territoires</a>
+        <a href="contact.html">A propos</a>
+    </nav>
+    <p>© 2025 TONNEAU ET PROFFIT</p>
+</footer>
+</body>
+</html>
