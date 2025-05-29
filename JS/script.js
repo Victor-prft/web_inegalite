@@ -125,4 +125,26 @@ document.addEventListener('DOMContentLoaded', function() {
     if (submitButton) {
         submitButton.onclick = submitQuiz;
     }
+})
+
+const tooltip = document.getElementById('tooltip');
+
+const data = {
+    FR: "France : 68 millions d'habitants",
+    US: "USA : 331 millions d'habitants",
+    CN: "Chine : 1,4 milliard d'habitants"
+};
+
+document.querySelectorAll('svg path').forEach(country => {
+    country.addEventListener('mousemove', (e) => {
+        const id = country.id;
+        tooltip.style.display = 'block';
+        tooltip.innerText = data[id] || "Aucune donnée";
+        tooltip.style.left = (e.pageX + 10) + 'px';
+        tooltip.style.top = (e.pageY + 10) + 'px';
+    });
+
+    country.addEventListener('mouseleave', () => {
+        tooltip.style.display = 'none';
+    });
 });
