@@ -144,6 +144,7 @@ document.querySelectorAll('svg path').forEach(country => {
         tooltip.style.top = (e.pageY + 10) + 'px';
     });
 
+
     country.addEventListener('mouseleave', () => {
         tooltip.style.display = 'none';
     });
