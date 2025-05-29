@@ -288,23 +288,11 @@ body {
 
 #lien-quizz{
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 
 #titre_carte{
     text-align: center;
-}
-
-
-
-#tooltip {
-    position: absolute;
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 5px;
-    display: none;
-    pointer-events: none;
-    font-size: 14px;
 }
 
 svg path {
