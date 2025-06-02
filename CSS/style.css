@@ -364,3 +364,100 @@ svg path:hover {
 .contact-form button:hover {
     background-color: #222;
 }
+
+.index-section {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.index-section h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #1e2a38;
+}
+
+.image-index2 {
+    width: 80%;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.apropos-section {
+    margin-bottom: 60px;
+}
+
+.apropos-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #1e2a38;
+    border-left: 5px solid #0077cc;
+    padding-left: 12px;
+}
+
+.text-index {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.indexcolumn {
+    flex: 1;
+    min-width: 280px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.importance-index {
+    background-color: #ffffff;
+    padding: 30px;
+    border-left: 6px solid #0077cc;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 60px;
+}
+
+.importance-index h2 {
+    font-size: 1.8em;
+    margin-bottom: 16px;
+    color: #1e2a38;
+}
+
+.importance-index p {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.importance-index ul {
+    list-style: disc inside;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.importance-index li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    .text-index {
+        flex-direction: column;
+    }
+
+    .index-section h1 {
+        font-size: 2.2em;
+    }
+
+    .image-index2 {
+        width: 95%;
+    }
+
+    .apropos-section h2,
+    .importance-index h2 {
+        font-size: 1.5em;
+    }
+}
