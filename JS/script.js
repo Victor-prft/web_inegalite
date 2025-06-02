@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
         submitButton.onclick = submitQuiz;
     }
 
-    // Formulaire de contact
+
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function (e) {
@@ -133,3 +133,4 @@ document.addEventListener('DOMContentLoaded', function () {
             alert(`Merci ${name} !\n\nVotre message a bien été envoyé :\n\nSujet : ${subject}\nMessage : ${message}`);
         });
     }
+})

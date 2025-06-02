@@ -73,9 +73,9 @@ nav ol li a {
 
 #header-container{
     display: flex;
-    align-items: center; /* Pour centrer verticalement */
+    align-items: center;
     padding: 10px 8% 5px 6%;
-    background-color: #f5f5f5; /* exemple de fond */
+    background-color: #f5f5f5;
 }
 
 
@@ -197,7 +197,7 @@ body {
 }
 
 .fait {
-    flex: 1 1 45%; /* prend environ 45% de la largeur */
+    flex: 1 1 45%;
     flex-direction: row;
     align-items: center;
     min-width: 300px;
@@ -241,7 +241,7 @@ body {
 }
 
 .itemclé {
-    flex: 1 1 45%; /* prend environ 45% de la largeur */
+    flex: 1 1 45%;
     background-color: #e0e0e0;
     border-radius: 8px;
     padding: 15px;
@@ -483,4 +483,4 @@ th.sort-asc::after {
 th.sort-desc::after {
     content: " \2193";
 
-}
+}}
