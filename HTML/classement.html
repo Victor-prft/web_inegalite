@@ -5,6 +5,23 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../CSS/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+            cursor: pointer;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -23,192 +40,245 @@
     </div>
 </header>
 
-<h1 class="titre-classement">Classement</h1>
-<div class="table-container">
-    <table class="data-table">
-        <thead>
-        <tr>
-            <th class="header-cell" >Country</th>
-            <th class="header-cell" >Region</th>
-            <th class="header-cell" >Income Group</th>
-            <th class="header-cell" >Overall CRI Rank</th>
-            <th class="header-cell" >Public Services Rank</th>
-            <th class="header-cell" >Tax Progressively Rank</th>
-            <th class="header-cell" >Labour Rights & Wages Rank</th>
-        </tr>
+=======
+<h1 style="text-align: center;">Classement des pays</h1>
+<h2 style="text-align: center;">Vous pouvez trier les colonnes</h2>
 
-        </thead>
-        <tbody>
-        <tr><td>Afghanistan</td><td>South Asia</td><td>Low-Income Country</td><td>144</td><td>155</td><td>99</td><td>127</td></tr>
-        <tr><td>Albania</td><td>Europe & Central Asia</td><td>Upper-Middle Income Country</td><td>84</td><td>72</td><td>129</td><td>70</td></tr>
-        <tr><td>Algeria</td><td>Middle East and North Africa</td><td>Lower-Middle Income Country</td><td>64</td><td>86</td><td>11</td><td>93</td></tr>
-        <tr><td>Angola</td><td>Sub-Saharan Africa</td><td>Lower-Middle Income Country</td><td>134</td><td>152</td><td>75</td><td>125</td></tr>
-        <tr><td>Antigua and Barbuda</td><td>Latin America & Caribbean</td><td>High-Income Country</td><td>85</td><td>83</td><td>149</td><td>46</td></tr>
-        <tr><td>Argentina</td><td>Latin America & Caribbean</td><td>Upper-Middle Income Country</td><td>37</td><td>48</td><td>35</td><td>55</td></tr>
-        <tr><td>Armenia</td><td>Europe & Central Asia</td><td>Upper-Middle Income Country</td><td>108</td><td>81</td><td>138</td><td>100</td></tr>
-        <tr><td>Australia</td><td>The Eastern Partnership</td><td>High-Income Country</td><td>3</td><td>18</td><td>2</td><td>36</td></tr>
-        <tr><td>Austria</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>7</td><td>10</td><td>48</td><td>9</td></tr>
-        <tr><td>Azerbaijan</td><td>Europe & Central Asia</td><td>Upper-Middle Income Country</td><td>87</td><td>95</td><td>80</td><td>91</td></tr>
-        <tr><td>Bahamas, The</td><td>Latin America & Caribbean</td><td>High-Income Country</td><td>95</td><td>66</td><td>161</td><td>52</td></tr>
-        <tr><td>Bahrain</td><td>Middle East and North Africa</td><td>High-Income Country</td><td>147</td><td>92</td><td>163</td><td>130</td></tr>
-        <tr><td>Bangladesh</td><td>South Asia</td><td>Lower-Middle Income Country</td><td>124</td><td>135</td><td>71</td><td>118</td></tr>
-        <tr><td>Barbados</td><td>Latin America & Caribbean</td><td>High-Income Country</td><td>70</td><td>89</td><td>110</td><td>51</td></tr>
-        <tr><td>Belarus</td><td>Europe & Central Asia</td><td>Upper-Middle Income Country</td><td>31</td><td>30</td><td>31</td><td>64</td></tr>
-        <tr><td>Belgium</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>20</td><td>7</td><td>78</td><td>22</td></tr>
-        <tr><td>Belize</td><td>Latin America & Caribbean</td><td>Upper-Middle Income Country</td><td>101</td><td>106</td><td>137</td><td>67</td></tr>
-        <tr><td>Benin</td><td>Sub-Saharan Africa</td><td>Lower-Middle Income Country</td><td>123</td><td>127</td><td>45</td><td>144</td></tr>
-        <tr><td>Bhutan</td><td>South Asia</td><td>Lower-Middle Income Country</td><td>122</td><td>110</td><td>34</td><td>160</td></tr>
-        <tr><td>Bolivia</td><td>Latin America & Caribbean</td><td>Lower-Middle Income Country</td><td>77</td><td>65</td><td>104</td><td>86</td></tr>
-        <tr><td>Botswana</td><td>Sub-Saharan Africa</td><td>Upper-Middle Income Country</td><td>82</td><td>56</td><td>28</td><td>135</td></tr>
-        <tr><td>Brazil</td><td>Latin America & Caribbean</td><td>Upper-Middle Income Country</td><td>78</td><td>82</td><td>92</td><td>80</td></tr>
-        <tr><td>Bulgaria</td><td>Europe & Central Asia</td><td>Upper-Middle Income Country</td><td>69</td><td>47</td><td>157</td><td>35</td></tr>
-        <tr><td>Burkina Faso</td><td>Sub-Saharan Africa</td><td>Low-Income Country</td><td>126</td><td>128</td><td>39</td><td>147</td></tr>
-        <tr><td>Burundi</td><td>Sub-Saharan Africa</td><td>Low-Income Country</td><td>155</td><td>144</td><td>108</td><td>151</td></tr>
-        <tr><td>Cabo Verde</td><td>Sub-Saharan Africa</td><td>Lower-Middle Income Country</td><td>93</td><td>96</td><td>118</td><td>79</td></tr>
-        <tr><td>Cambodia</td><td>The Eastern Partnership</td><td>Lower-Middle Income Country</td><td>103</td><td>138</td><td>5</td><td>114</td></tr>
-        <tr><td>Cameroon</td><td>Sub-Saharan Africa</td><td>Lower-Middle Income Country</td><td>148</td><td>146</td><td>84</td><td>152</td></tr>
-        <tr><td>Canada</td><td>NA</td><td>High-Income Country</td><td>2</td><td>6</td><td>10</td><td>18</td></tr>
-        <tr><td>Central African Republic</td><td>Sub-Saharan Africa</td><td>Low-Income Country</td><td>158</td><td>159</td><td>77</td><td>157</td></tr>
-        <tr><td>Chad</td><td>Sub-Saharan Africa</td><td>Low-Income Country</td><td>145</td><td>161</td><td>42</td><td>153</td></tr>
-        <tr><td>Chile</td><td>Latin America & Caribbean</td><td>High-Income Country</td><td>29</td><td>27</td><td>36</td><td>54</td></tr>
-        <tr><td>China</td><td>The Eastern Partnership</td><td>Upper-Middle Income Country</td><td>58</td><td>57</td><td>15</td><td>107</td></tr>
-        <tr><td>Colombia</td><td>Latin America & Caribbean</td><td>Upper-Middle Income Country</td><td>41</td><td>45</td><td>20</td><td>84</td></tr>
-        <tr><td>Congo, Dem. Rep.</td><td>Sub-Saharan Africa</td><td>Low-Income Country</td><td>143</td><td>133</td><td>54</td><td>158</td></tr>
-        <tr><td>Congo, Rep.</td><td>Sub-Saharan Africa</td><td>Lower-Middle Income Country</td><td>140</td><td>134</td><td>130</td><td>110</td></tr>
-        <tr><td>Costa Rica</td><td>Latin America & Caribbean</td><td>Upper-Middle Income Country</td><td>32</td><td>36</td><td>24</td><td>63</td></tr>
-        <tr><td>Cote d'Ivoire</td><td>Sub-Saharan Africa</td><td>Lower-Middle Income Country</td><td>152</td><td>130</td><td>124</td><td>149</td></tr>
-        <tr><td>Croatia</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>18</td><td>15</td><td>74</td><td>10</td></tr>
-        <tr><td>Cyprus</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>45</td><td>41</td><td>143</td><td>17</td></tr>
-        <tr><td>Czechia</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>16</td><td>14</td><td>88</td><td>8</td></tr>
-        <tr><td>Denmark</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>6</td><td>13</td><td>62</td><td>4</td></tr>
-        <tr><td>Djibouti</td><td>Middle East and North Africa</td><td>Lower-Middle Income Country</td><td>114</td><td>124</td><td>30</td><td>133</td></tr>
-        <tr><td>Dominican Republic</td><td>Latin America & Caribbean</td><td>Upper-Middle Income Country</td><td>98</td><td>88</td><td>144</td><td>72</td></tr>
-        <tr><td>Ecuador</td><td>Latin America & Caribbean</td><td>Upper-Middle Income Country</td><td>62</td><td>60</td><td>33</td><td>92</td></tr>
-        <tr><td>Egypt, Arab Rep.</td><td>Middle East and North Africa</td><td>Lower-Middle Income Country</td><td>90</td><td>107</td><td>101</td><td>74</td></tr>
-        <tr><td>El Salvador</td><td>Latin America & Caribbean</td><td>Upper-Middle Income Country</td><td>65</td><td>94</td><td>60</td><td>56</td></tr>
-        <tr><td>Estonia</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>27</td><td>24</td><td>103</td><td>20</td></tr>
-        <tr><td>Eswatini</td><td>Sub-Saharan Africa</td><td>Lower-Middle Income Country</td><td>91</td><td>74</td><td>56</td><td>126</td></tr>
-        <tr><td>Ethiopia</td><td>Sub-Saharan Africa</td><td>Low-Income Country</td><td>150</td><td>140</td><td>83</td><td>159</td></tr>
-        <tr><td>Fiji</td><td>The Eastern Partnership</td><td>Upper-Middle Income Country</td><td>104</td><td>102</td><td>134</td><td>82</td></tr>
-        <tr><td>Finland</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>5</td><td>2</td><td>58</td><td>7</td></tr>
-        <tr><td>France</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>10</td><td>4</td><td>52</td><td>30</td></tr>
-        <tr><td>Gambia, The</td><td>Sub-Saharan Africa</td><td>Low-Income Country</td><td>135</td><td>141</td><td>96</td><td>124</td></tr>
-        <tr><td>Georgia</td><td>Europe & Central Asia</td><td>Upper-Middle Income Country</td><td>72</td><td>69</td><td>51</td><td>95</td></tr>
-        <tr><td>Germany</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>4</td><td>9</td><td>17</td><td>13</td></tr>
-        <tr><td>Ghana</td><td>Sub-Saharan Africa</td><td>Lower-Middle Income Country</td><td>137</td><td>139</td><td>72</td><td>138</td></tr>
-        <tr><td>Greece</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>39</td><td>29</td><td>135</td><td>38</td></tr>
-        <tr><td>Guatemala</td><td>Latin America & Caribbean</td><td>Upper-Middle Income Country</td><td>100</td><td>117</td><td>65</td><td>90</td></tr>
-        <tr><td>Guinea</td><td>Sub-Saharan Africa</td><td>Lower-Middle Income Country</td><td>154</td><td>160</td><td>102</td><td>145</td></tr>
-        <tr><td>Guinea-Bissau</td><td>Sub-Saharan Africa</td><td>Low-Income Country</td><td>146</td><td>157</td><td>116</td><td>121</td></tr>
-        <tr><td>Guyana</td><td>Latin America & Caribbean</td><td>High-Income Country</td><td>75</td><td>79</td><td>132</td><td>53</td></tr>
-        <tr><td>Haiti</td><td>Latin America & Caribbean</td><td>Lower-Middle Income Country</td><td>161</td><td>151</td><td>139</td><td>143</td></tr>
-        <tr><td>Honduras</td><td>Latin America & Caribbean</td><td>Lower-Middle Income Country</td><td>92</td><td>120</td><td>43</td><td>88</td></tr>
-        <tr><td>Hong Kong SAR, China</td><td>The Eastern Partnership</td><td>High-Income Country</td><td>80</td><td>62</td><td>152</td><td>45</td></tr>
-        <tr><td>Hungary</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>44</td><td>42</td><td>148</td><td>14</td></tr>
-        <tr><td>Iceland</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>22</td><td>32</td><td>86</td><td>5</td></tr>
-        <tr><td>India</td><td>South Asia</td><td>Lower-Middle Income Country</td><td>127</td><td>129</td><td>16</td><td>156</td></tr>
-        <tr><td>Indonesia</td><td>The Eastern Partnership</td><td>Upper-Middle Income Country</td><td>105</td><td>112</td><td>50</td><td>112</td></tr>
-        <tr><td>Iran</td><td>Middle East and North Africa</td><td>Lower-Middle Income Country</td><td>106</td><td>58</td><td>131</td><td>117</td></tr>
-        <tr><td>Iraq</td><td>Middle East and North Africa</td><td>Upper-Middle Income Country</td><td>131</td><td>121</td><td>145</td><td>96</td></tr>
-        <tr><td>Ireland</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>12</td><td>3</td><td>97</td><td>11</td></tr>
-        <tr><td>Israel</td><td>Middle East and North Africa</td><td>High-Income Country</td><td>13</td><td>28</td><td>32</td><td>16</td></tr>
-        <tr><td>Italy</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>21</td><td>26</td><td>46</td><td>24</td></tr>
-        <tr><td>Jamaica</td><td>Latin America & Caribbean</td><td>Upper-Middle Income Country</td><td>83</td><td>87</td><td>94</td><td>81</td></tr>
-        <tr><td>Japan</td><td>The Eastern Partnership</td><td>High-Income Country</td><td>8</td><td>5</td><td>29</td><td>34</td></tr>
-        <tr><td>Jordan</td><td>Middle East and North Africa</td><td>Lower-Middle Income Country</td><td>43</td><td>100</td><td>14</td><td>44</td></tr>
-        <tr><td>Kazakhstan</td><td>Europe & Central Asia</td><td>Upper-Middle Income Country</td><td>60</td><td>39</td><td>123</td><td>65</td></tr>
-        <tr><td>Kenya</td><td>Sub-Saharan Africa</td><td>Lower-Middle Income Country</td><td>96</td><td>111</td><td>7</td><td>132</td></tr>
-        <tr><td>Kiribati</td><td>The Eastern Partnership</td><td>Lower-Middle Income Country</td><td>48</td><td>76</td><td>12</td><td>76</td></tr>
-        <tr><td>Korea, Rep.</td><td>The Eastern Partnership</td><td>High-Income Country</td><td>25</td><td>37</td><td>8</td><td>48</td></tr>
-        <tr><td>Kyrgyz Republic</td><td>Europe & Central Asia</td><td>Lower-Middle Income Country</td><td>38</td><td>71</td><td>6</td><td>57</td></tr>
-        <tr><td>Lao PDR</td><td>The Eastern Partnership</td><td>Lower-Middle Income Country</td><td>130</td><td>149</td><td>19</td><td>150</td></tr>
-        <tr><td>Latvia</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>35</td><td>40</td><td>98</td><td>29</td></tr>
-        <tr><td>Lebanon</td><td>Middle East and North Africa</td><td>Lower-Middle Income Country</td><td>125</td><td>113</td><td>154</td><td>83</td></tr>
-        <tr><td>Lesotho</td><td>Sub-Saharan Africa</td><td>Lower-Middle Income Country</td><td>54</td><td>97</td><td>3</td><td>89</td></tr>
-        <tr><td>Liberia</td><td>Sub-Saharan Africa</td><td>Low-Income Country</td><td>157</td><td>150</td><td>126</td><td>139</td></tr>
-        <tr><td>Lithuania</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>30</td><td>31</td><td>105</td><td>31</td></tr>
-        <tr><td>Luxembourg</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>28</td><td>23</td><td>120</td><td>12</td></tr>
-        <tr><td>Madagascar</td><td>Sub-Saharan Africa</td><td>Low-Income Country</td><td>149</td><td>137</td><td>128</td><td>137</td></tr>
-        <tr><td>Malawi</td><td>Sub-Saharan Africa</td><td>Low-Income Country</td><td>117</td><td>142</td><td>68</td><td>104</td></tr>
-        <tr><td>Malaysia</td><td>The Eastern Partnership</td><td>Upper-Middle Income Country</td><td>67</td><td>63</td><td>73</td><td>78</td></tr>
-        <tr><td>Maldives</td><td>South Asia</td><td>Upper-Middle Income Country</td><td>66</td><td>105</td><td>22</td><td>71</td></tr>
-        <tr><td>Mali</td><td>Sub-Saharan Africa</td><td>Low-Income Country</td><td>129</td><td>136</td><td>44</td><td>142</td></tr>
-        <tr><td>Malta</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>51</td><td>49</td><td>146</td><td>19</td></tr>
-        <tr><td>Mauritania</td><td>Sub-Saharan Africa</td><td>Lower-Middle Income Country</td><td>142</td><td>126</td><td>127</td><td>129</td></tr>
-        <tr><td>Mauritius</td><td>Sub-Saharan Africa</td><td>Upper-Middle Income Country</td><td>53</td><td>53</td><td>107</td><td>50</td></tr>
-        <tr><td>Mexico</td><td>Latin America & Caribbean</td><td>Upper-Middle Income Country</td><td>63</td><td>50</td><td>70</td><td>87</td></tr>
-        <tr><td>Moldova</td><td>Europe & Central Asia</td><td>Upper-Middle Income Country</td><td>57</td><td>46</td><td>90</td><td>77</td></tr>
-        <tr><td>Mongolia</td><td>The Eastern Partnership</td><td>Lower-Middle Income Country</td><td>47</td><td>52</td><td>49</td><td>68</td></tr>
-        <tr><td>Montenegro</td><td>Europe & Central Asia</td><td>Upper-Middle Income Country</td><td>89</td><td>64</td><td>160</td><td>40</td></tr>
-        <tr><td>Morocco</td><td>Middle East and North Africa</td><td>Lower-Middle Income Country</td><td>73</td><td>90</td><td>21</td><td>97</td></tr>
-        <tr><td>Mozambique</td><td>Sub-Saharan Africa</td><td>Low-Income Country</td><td>138</td><td>123</td><td>119</td><td>131</td></tr>
-        <tr><td>Namibia</td><td>Sub-Saharan Africa</td><td>Upper-Middle Income Country</td><td>49</td><td>33</td><td>25</td><td>109</td></tr>
-        <tr><td>Nepal</td><td>South Asia</td><td>Lower-Middle Income Country</td><td>115</td><td>114</td><td>63</td><td>128</td></tr>
-        <tr><td>Netherlands</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>34</td><td>20</td><td>136</td><td>23</td></tr>
-        <tr><td>New Zealand</td><td>The Eastern Partnership</td><td>High-Income Country</td><td>14</td><td>22</td><td>18</td><td>39</td></tr>
-        <tr><td>Niger</td><td>Sub-Saharan Africa</td><td>Low-Income Country</td><td>151</td><td>156</td><td>67</td><td>154</td></tr>
-        <tr><td>Nigeria</td><td>Sub-Saharan Africa</td><td>Lower-Middle Income Country</td><td>163</td><td>158</td><td>109</td><td>164</td></tr>
-        <tr><td>North Macedonia</td><td>Europe & Central Asia</td><td>Upper-Middle Income Country</td><td>76</td><td>61</td><td>159</td><td>26</td></tr>
-        <tr><td>Norway</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>1</td><td>17</td><td>1</td><td>2</td></tr>
-        <tr><td>Occupied Palestinian Territory</td><td>Middle East and North Africa</td><td>Upper-Middle Income Country</td><td>81</td><td>68</td><td>158</td><td>32</td></tr>
-        <tr><td>Oman</td><td>Middle East and North Africa</td><td>High-Income Country</td><td>119</td><td>98</td><td>112</td><td>134</td></tr>
-        <tr><td>Pakistan</td><td>South Asia</td><td>Lower-Middle Income Country</td><td>141</td><td>162</td><td>89</td><td>113</td></tr>
-        <tr><td>Panama</td><td>Latin America & Caribbean</td><td>High-Income Country</td><td>121</td><td>85</td><td>156</td><td>102</td></tr>
-        <tr><td>Papua New Guinea</td><td>The Eastern Partnership</td><td>Lower-Middle Income Country</td><td>133</td><td>143</td><td>55</td><td>141</td></tr>
-        <tr><td>Paraguay</td><td>Latin America & Caribbean</td><td>Upper-Middle Income Country</td><td>56</td><td>51</td><td>85</td><td>66</td></tr>
-        <tr><td>Peru</td><td>Latin America & Caribbean</td><td>Upper-Middle Income Country</td><td>88</td><td>84</td><td>66</td><td>106</td></tr>
-        <tr><td>Philippines</td><td>The Eastern Partnership</td><td>Lower-Middle Income Country</td><td>109</td><td>119</td><td>93</td><td>94</td></tr>
-        <tr><td>Poland</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>17</td><td>1</td><td>115</td><td>15</td></tr>
-        <tr><td>Portugal</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>11</td><td>19</td><td>41</td><td>25</td></tr>
-        <tr><td>Romania</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>61</td><td>59</td><td>141</td><td>27</td></tr>
-        <tr><td>Russian Federation</td><td>Europe & Central Asia</td><td>Upper-Middle Income Country</td><td>46</td><td>44</td><td>111</td><td>43</td></tr>
-        <tr><td>Rwanda</td><td>Sub-Saharan Africa</td><td>Low-Income Country</td><td>139</td><td>145</td><td>69</td><td>140</td></tr>
-        <tr><td>Samoa</td><td>The Eastern Partnership</td><td>Lower-Middle Income Country</td><td>97</td><td>91</td><td>151</td><td>58</td></tr>
-        <tr><td>Sao Tome and Principe</td><td>Sub-Saharan Africa</td><td>Lower-Middle Income Country</td><td>120</td><td>104</td><td>140</td><td>103</td></tr>
-        <tr><td>Senegal</td><td>Sub-Saharan Africa</td><td>Lower-Middle Income Country</td><td>111</td><td>118</td><td>53</td><td>116</td></tr>
-        <tr><td>Serbia</td><td>Europe & Central Asia</td><td>Upper-Middle Income Country</td><td>36</td><td>55</td><td>57</td><td>33</td></tr>
-        <tr><td>Seychelles</td><td>Sub-Saharan Africa</td><td>High-Income Country</td><td>52</td><td>80</td><td>81</td><td>41</td></tr>
-        <tr><td>Sierra Leone</td><td>Sub-Saharan Africa</td><td>Low-Income Country</td><td>156</td><td>147</td><td>121</td><td>146</td></tr>
-        <tr><td>Singapore</td><td>The Eastern Partnership</td><td>High-Income Country</td><td>102</td><td>73</td><td>155</td><td>61</td></tr>
-        <tr><td>Slovakia</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>19</td><td>21</td><td>106</td><td>1</td></tr>
-        <tr><td>Slovenia</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>9</td><td>8</td><td>82</td><td>3</td></tr>
-        <tr><td>Solomon Islands</td><td>The Eastern Partnership</td><td>Lower-Middle Income Country</td><td>136</td><td>108</td><td>133</td><td>136</td></tr>
-        <tr><td>Somalia</td><td>Sub-Saharan Africa</td><td>Low-Income Country</td><td>153</td><td>163</td><td>125</td><td>119</td></tr>
-        <tr><td>South Africa</td><td>Sub-Saharan Africa</td><td>Upper-Middle Income Country</td><td>33</td><td>38</td><td>4</td><td>85</td></tr>
-        <tr><td>South Sudan</td><td>Sub-Saharan Africa</td><td>Low-Income Country</td><td>164</td><td>164</td><td>162</td><td>163</td></tr>
-        <tr><td>Spain</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>23</td><td>25</td><td>61</td><td>28</td></tr>
-        <tr><td>Sri Lanka</td><td>South Asia</td><td>Lower-Middle Income Country</td><td>118</td><td>132</td><td>95</td><td>99</td></tr>
-        <tr><td>St. Lucia</td><td>Latin America & Caribbean</td><td>Upper-Middle Income Country</td><td>107</td><td>109</td><td>147</td><td>60</td></tr>
-        <tr><td>St. Vincent and the Grenadines</td><td>Latin America & Caribbean</td><td>Upper-Middle Income Country</td><td>86</td><td>101</td><td>113</td><td>69</td></tr>
-        <tr><td>Sweden</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>24</td><td>16</td><td>114</td><td>6</td></tr>
-        <tr><td>Switzerland</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>40</td><td>34</td><td>142</td><td>21</td></tr>
-        <tr><td>Tajikistan</td><td>Europe & Central Asia</td><td>Lower-Middle Income Country</td><td>55</td><td>77</td><td>47</td><td>62</td></tr>
-        <tr><td>Tanzania</td><td>Sub-Saharan Africa</td><td>Lower-Middle Income Country</td><td>132</td><td>153</td><td>23</td><td>148</td></tr>
-        <tr><td>Thailand</td><td>The Eastern Partnership</td><td>Upper-Middle Income Country</td><td>74</td><td>67</td><td>37</td><td>108</td></tr>
-        <tr><td>Timor-Leste</td><td>The Eastern Partnership</td><td>Lower-Middle Income Country</td><td>110</td><td>115</td><td>76</td><td>105</td></tr>
-        <tr><td>Togo</td><td>Sub-Saharan Africa</td><td>Low-Income Country</td><td>112</td><td>131</td><td>27</td><td>123</td></tr>
-        <tr><td>Tonga</td><td>The Eastern Partnership</td><td>Upper-Middle Income Country</td><td>128</td><td>99</td><td>150</td><td>111</td></tr>
-        <tr><td>Trinidad and Tobago</td><td>Latin America & Caribbean</td><td>High-Income Country</td><td>99</td><td>75</td><td>153</td><td>75</td></tr>
-        <tr><td>Tunisia</td><td>Middle East and North Africa</td><td>Lower-Middle Income Country</td><td>59</td><td>93</td><td>26</td><td>73</td></tr>
-        <tr><td>Turkiye</td><td>Europe & Central Asia</td><td>Upper-Middle Income Country</td><td>68</td><td>70</td><td>100</td><td>59</td></tr>
-        <tr><td>Tuvalu</td><td>The Eastern Partnership</td><td>Upper-Middle Income Country</td><td>79</td><td>78</td><td>59</td><td>98</td></tr>
-        <tr><td>Uganda</td><td>Sub-Saharan Africa</td><td>Low-Income Country</td><td>159</td><td>148</td><td>79</td><td>161</td></tr>
-        <tr><td>Ukraine</td><td>Europe & Central Asia</td><td>Lower-Middle Income Country</td><td>50</td><td>43</td><td>122</td><td>47</td></tr>
-        <tr><td>United Kingdom</td><td>Europe & Central Asia</td><td>High-Income Country</td><td>15</td><td>11</td><td>40</td><td>37</td></tr>
-        <tr><td>United States</td><td>NA</td><td>High-Income Country</td><td>26</td><td>12</td><td>91</td><td>42</td></tr>
-        <tr><td>Uruguay</td><td>Latin America & Caribbean</td><td>High-Income Country</td><td>42</td><td>54</td><td>64</td><td>49</td></tr>
-        <tr><td>Uzbekistan</td><td>Europe & Central Asia</td><td>Lower-Middle Income Country</td><td>71</td><td>35</td><td>87</td><td>115</td></tr>
-        <tr><td>Vanuatu</td><td>The Eastern Partnership</td><td>Lower-Middle Income Country</td><td>162</td><td>122</td><td>164</td><td>101</td></tr>
-        <tr><td>Vietnam</td><td>The Eastern Partnership</td><td>Lower-Middle Income Country</td><td>94</td><td>103</td><td>38</td><td>120</td></tr>
-        <tr><td>Yemen, Rep.</td><td>Middle East and North Africa</td><td>Low-Income Country</td><td>116</td><td>154</td><td>13</td><td>122</td></tr>
-        <tr><td>Zambia</td><td>Sub-Saharan Africa</td><td>Lower-Middle Income Country</td><td>113</td><td>116</td><td>9</td><td>155</td></tr>
-        <tr><td>Zimbabwe</td><td>Sub-Saharan Africa</td><td>Lower-Middle Income Country</td><td>160</td><td>125</td><td>117</td><td>162</td></tr>
-        </tbody>
-    </table>
-</div>
-</body>
-</html>
+<table id="resultTable">
+    <thead>
+    <tr>
+        <th onclick="sortTable('country')">Pays</th>
+        <th onclick="sortTable('index1')">Overal CRI Rank</th>
+        <th onclick="sortTable('index2')">Public Services Rank</th>
+        <th onclick="sortTable('index3')">Tax Progressively Rank</th>
+        <th onclick="sortTable('index4')">labour Rights & Wages Rank</th>
+    </tr>
+    </thead>
+    <tbody id="table-body">
+    <!-- Contenu généré par JavaScript -->
+    </tbody>
+</table>
+<br>
 
+<script>
+    const data = [
+        { country: "Afghanistan", index1: 144, index2: 155, index3: 99, index4: 127 },
+        { country: "Albania", index1: 84, index2: 72, index3: 129, index4: 70 },
+        { country: "Algeria", index1: 64, index2: 86, index3: 11, index4: 93 },
+        { country: "Angola", index1: 134, index2: 152, index3: 75, index4: 125 },
+        { country: "Antigua and Barbuda", index1: 85, index2: 83, index3: 149, index4: 46 },
+        { country: "Argentina", index1: 37, index2: 48, index3: 35, index4: 55 },
+        { country: "Armenia", index1: 108, index2: 81, index3: 138, index4: 100 },
+        { country: "Australia", index1: 3, index2: 18, index3: 2, index4: 36 },
+        { country: "Austria", index1: 7, index2: 10, index3: 48, index4: 9 },
+        { country: "Azerbaijan", index1: 87, index2: 95, index3: 80, index4: 91 },
+        { country: "Bahamas, The", index1: 95, index2: 66, index3: 161, index4: 52 },
+        { country: "Bahrain", index1: 147, index2: 92, index3: 163, index4: 130 },
+        { country: "Bangladesh", index1: 124, index2: 135, index3: 71, index4: 118 },
+        { country: "Barbados", index1: 70, index2: 89, index3: 110, index4: 51 },
+        { country: "Belarus", index1: 31, index2: 30, index3: 31, index4: 64 },
+        { country: "Belgium", index1: 20, index2: 7, index3: 78, index4: 22 },
+        { country: "Belize", index1: 101, index2: 106, index3: 137, index4: 67 },
+        { country: "Benin", index1: 123, index2: 127, index3: 45, index4: 144 },
+        { country: "Bhutan", index1: 122, index2: 110, index3: 34, index4: 160 },
+        { country: "Bolivia", index1: 77, index2: 65, index3: 104, index4: 86 },
+        { country: "Botswana", index1: 82, index2: 56, index3: 28, index4: 135 },
+        { country: "Brazil", index1: 78, index2: 82, index3: 92, index4: 80 },
+        { country: "Bulgaria", index1: 69, index2: 47, index3: 157, index4: 35 },
+        { country: "Burkina Faso", index1: 126, index2: 128, index3: 39, index4: 147 },
+        { country: "Burundi", index1: 155, index2: 144, index3: 108, index4: 151 },
+        { country: "Cabo Verde", index1: 93, index2: 96, index3: 118, index4: 79 },
+        { country: "Cambodia", index1: 103, index2: 138, index3: 5, index4: 114 },
+        { country: "Cameroon", index1: 148, index2: 146, index3: 84, index4: 152 },
+        { country: "Canada", index1: 2, index2: 6, index3: 10, index4: 18 },
+        { country: "Central African Republic", index1: 158, index2: 159, index3: 77, index4: 157 },
+        { country: "Chad", index1: 145, index2: 161, index3: 42, index4: 153 },
+        { country: "Chile", index1: 29, index2: 27, index3: 36, index4: 54 },
+        { country: "China", index1: 58, index2: 57, index3: 15, index4: 107 },
+        { country: "Colombia", index1: 41, index2: 45, index3: 20, index4: 84 },
+        { country: "Congo, Dem. Rep.", index1: 143, index2: 133, index3: 54, index4: 158 },
+        { country: "Congo, Rep.", index1: 140, index2: 134, index3: 130, index4: 110 },
+        { country: "Costa Rica", index1: 32, index2: 36, index3: 24, index4: 63 },
+        { country: "Cote d'Ivoire", index1: 152, index2: 130, index3: 124, index4: 149 },
+        { country: "Croatia", index1: 18, index2: 15, index3: 74, index4: 10 },
+        { country: "Cyprus", index1: 45, index2: 41, index3: 143, index4: 17 },
+        { country: "Czechia", index1: 16, index2: 14, index3: 88, index4: 8 },
+        { country: "Denmark", index1: 6, index2: 13, index3: 62, index4: 4 },
+        { country: "Djibouti", index1: 114, index2: 124, index3: 30, index4: 133 },
+        { country: "Dominican Republic", index1: 98, index2: 88, index3: 144, index4: 72 },
+        { country: "Ecuador", index1: 62, index2: 60, index3: 33, index4: 92 },
+        { country: "Egypt, Arab Rep.", index1: 90, index2: 107, index3: 101, index4: 74 },
+        { country: "El Salvador", index1: 65, index2: 94, index3: 60, index4: 56 },
+        { country: "Estonia", index1: 27, index2: 24, index3: 103, index4: 20 },
+        { country: "Eswatini", index1: 91, index2: 74, index3: 56, index4: 126 },
+        { country: "Ethiopia", index1: 150, index2: 140, index3: 83, index4: 159 },
+        { country: "Fiji", index1: 104, index2: 102, index3: 134, index4: 82 },
+        { country: "Finland", index1: 5, index2: 2, index3: 58, index4: 7 },
+        { country: "France", index1: 10, index2: 4, index3: 52, index4: 30 },
+        { country: "Gambia, The", index1: 135, index2: 141, index3: 96, index4: 124 },
+        { country: "Georgia", index1: 72, index2: 69, index3: 51, index4: 95 },
+        { country: "Germany", index1: 4, index2: 9, index3: 17, index4: 13 },
+        { country: "Ghana", index1: 137, index2: 139, index3: 72, index4: 138 },
+        { country: "Greece", index1: 39, index2: 29, index3: 135, index4: 38 },
+        { country: "Guatemala", index1: 100, index2: 117, index3: 65, index4: 90 },
+        { country: "Guinea", index1: 154, index2: 160, index3: 102, index4: 145 },
+        { country: "Guinea-Bissau", index1: 146, index2: 157, index3: 116, index4: 121 },
+        { country: "Guyana", index1: 75, index2: 79, index3: 132, index4: 53 },
+        { country: "Haiti", index1: 161, index2: 151, index3: 139, index4: 143 },
+        { country: "Honduras", index1: 92, index2: 120, index3: 43, index4: 88 },
+        { country: "Hong Kong SAR, China", index1: 80, index2: 62, index3: 152, index4: 45 },
+        { country: "Hungary", index1: 44, index2: 42, index3: 148, index4: 14 },
+        { country: "Iceland", index1: 22, index2: 32, index3: 86, index4: 5 },
+        { country: "India", index1: 127, index2: 129, index3: 16, index4: 156 },
+        { country: "Indonesia", index1: 105, index2: 112, index3: 50, index4: 112 },
+        { country: "Iran", index1: 106, index2: 58, index3: 131, index4: 117 },
+        { country: "Iraq", index1: 131, index2: 121, index3: 145, index4: 96 },
+        { country: "Ireland", index1: 12, index2: 3, index3: 97, index4: 11 },
+        { country: "Israel", index1: 13, index2: 28, index3: 32, index4: 16 },
+        { country: "Italy", index1: 21, index2: 26, index3: 46, index4: 24 },
+        { country: "Jamaica", index1: 83, index2: 87, index3: 94, index4: 81 },
+        { country: "Japan", index1: 8, index2: 5, index3: 29, index4: 34 },
+        { country: "Jordan", index1: 43, index2: 100, index3: 14, index4: 44 },
+        { country: "Kazakhstan", index1: 60, index2: 39, index3: 123, index4: 65 },
+        { country: "Kenya", index1: 96, index2: 111, index3: 7, index4: 132 },
+        { country: "Kiribati", index1: 48, index2: 76, index3: 12, index4: 76 },
+        { country: "Korea, Rep.", index1: 25, index2: 37, index3: 8, index4: 48 },
+        { country: "Kyrgyz Republic", index1: 38, index2: 71, index3: 6, index4: 57 },
+        { country: "Lao PDR", index1: 130, index2: 149, index3: 19, index4: 150 },
+        { country: "Latvia", index1: 35, index2: 40, index3: 98, index4: 29 },
+        { country: "Lebanon", index1: 125, index2: 113, index3: 154, index4: 83 },
+        { country: "Lesotho", index1: 54, index2: 97, index3: 3, index4: 89 },
+        { country: "Liberia", index1: 157, index2: 150, index3: 126, index4: 139 },
+        { country: "Lithuania", index1: 30, index2: 31, index3: 105, index4: 31 },
+        { country: "Luxembourg", index1: 28, index2: 23, index3: 120, index4: 12 },
+        { country: "Madagascar", index1: 149, index2: 137, index3: 128, index4: 137 },
+        { country: "Malawi", index1: 117, index2: 142, index3: 68, index4: 104 },
+        { country: "Malaysia", index1: 67, index2: 63, index3: 73, index4: 78 },
+        { country: "Maldives", index1: 66, index2: 105, index3: 22, index4: 71 },
+        { country: "Mali", index1: 129, index2: 136, index3: 44, index4: 142 },
+        { country: "Malta", index1: 51, index2: 49, index3: 146, index4: 19 },
+        { country: "Mauritania", index1: 142, index2: 126, index3: 127, index4: 129 },
+        { country: "Mauritius", index1: 53, index2: 53, index3: 107, index4: 50 },
+        { country: "Mexico", index1: 63, index2: 50, index3: 70, index4: 87 },
+        { country: "Moldova", index1: 57, index2: 46, index3: 90, index4: 77 },
+        { country: "Mongolia", index1: 47, index2: 52, index3: 49, index4: 68 },
+        { country: "Montenegro", index1: 89, index2: 64, index3: 160, index4: 40 },
+        { country: "Morocco", index1: 73, index2: 90, index3: 21, index4: 97 },
+        { country: "Mozambique", index1: 138, index2: 123, index3: 119, index4: 131 },
+        { country: "Namibia", index1: 49, index2: 33, index3: 25, index4: 109 },
+        { country: "Nepal", index1: 115, index2: 114, index3: 63, index4: 128 },
+        { country: "Netherlands", index1: 34, index2: 20, index3: 136, index4: 23 },
+        { country: "New Zealand", index1: 14, index2: 22, index3: 18, index4: 39 },
+        { country: "Niger", index1: 151, index2: 156, index3: 67, index4: 154 },
+        { country: "Nigeria", index1: 163, index2: 158, index3: 109, index4: 164 },
+        { country: "North Macedonia", index1: 76, index2: 61, index3: 159, index4: 26 },
+        { country: "Norway", index1: 1, index2: 17, index3: 1, index4: 2 },
+        { country: "Occupied Palestinian Territory", index1: 81, index2: 68, index3: 158, index4: 32 },
+        { country: "Oman", index1: 119, index2: 98, index3: 112, index4: 134 },
+        { country: "Pakistan", index1: 141, index2: 162, index3: 89, index4: 113 },
+        { country: "Panama", index1: 121, index2: 85, index3: 156, index4: 102 },
+        { country: "Papua New Guinea", index1: 133, index2: 143, index3: 55, index4: 141 },
+        { country: "Paraguay", index1: 56, index2: 51, index3: 85, index4: 66 },
+        { country: "Peru", index1: 88, index2: 84, index3: 66, index4: 106 },
+        { country: "Philippines", index1: 109, index2: 119, index3: 93, index4: 94 },
+        { country: "Poland", index1: 17, index2: 1, index3: 115, index4: 15 },
+        { country: "Portugal", index1: 11, index2: 19, index3: 41, index4: 25 },
+        { country: "Romania", index1: 61, index2: 59, index3: 141, index4: 27 },
+        { country: "Russian Federation", index1: 46, index2: 44, index3: 111, index4: 43 },
+        { country: "Rwanda", index1: 139, index2: 145, index3: 69, index4: 140 },
+        { country: "Samoa", index1: 97, index2: 91, index3: 151, index4: 58 },
+        { country: "Sao Tome and Principe", index1: 120, index2: 104, index3: 140, index4: 103 },
+        { country: "Senegal", index1: 111, index2: 118, index3: 53, index4: 116 },
+        { country: "Serbia", index1: 36, index2: 55, index3: 57, index4: 33 },
+        { country: "Seychelles", index1: 52, index2: 80, index3: 81, index4: 41 },
+        { country: "Sierra Leone", index1: 156, index2: 147, index3: 121, index4: 146 },
+        { country: "Singapore", index1: 102, index2: 73, index3: 155, index4: 61 },
+        { country: "Slovakia", index1: 19, index2: 21, index3: 106, index4: 1 },
+        { country: "Slovenia", index1: 9, index2: 8, index3: 82, index4: 3 },
+        { country: "Solomon Islands", index1: 136, index2: 108, index3: 133, index4: 136 },
+        { country: "Somalia", index1: 153, index2: 163, index3: 125, index4: 119 },
+        { country: "South Africa", index1: 33, index2: 38, index3: 4, index4: 85 },
+        { country: "South Sudan", index1: 164, index2: 164, index3: 162, index4: 163 },
+        { country: "Spain", index1: 23, index2: 25, index3: 61, index4: 28 },
+        { country: "Sri Lanka", index1: 118, index2: 132, index3: 95, index4: 99 },
+        { country: "St. Lucia", index1: 107, index2: 109, index3: 147, index4: 60 },
+        { country: "St. Vincent and the Grenadines", index1: 86, index2: 101, index3: 113, index4: 69 },
+        { country: "Sweden", index1: 24, index2: 16, index3: 114, index4: 6 },
+        { country: "Switzerland", index1: 40, index2: 34, index3: 142, index4: 21 },
+        { country: "Tajikistan", index1: 55, index2: 77, index3: 47, index4: 62 },
+        { country: "Tanzania", index1: 132, index2: 153, index3: 23, index4: 148 },
+        { country: "Thailand", index1: 74, index2: 67, index3: 37, index4: 108 },
+        { country: "Timor-Leste", index1: 110, index2: 115, index3: 76, index4: 105 },
+        { country: "Togo", index1: 112, index2: 131, index3: 27, index4: 123 },
+        { country: "Tonga", index1: 128, index2: 99, index3: 150, index4: 111 },
+        { country: "Trinidad and Tobago", index1: 99, index2: 75, index3: 153, index4: 75 },
+        { country: "Tunisia", index1: 59, index2: 93, index3: 26, index4: 73 },
+        { country: "Turkiye", index1: 68, index2: 70, index3: 100, index4: 59 },
+        { country: "Tuvalu", index1: 79, index2: 78, index3: 59, index4: 98 },
+        { country: "Uganda", index1: 159, index2: 148, index3: 79, index4: 161 },
+        { country: "Ukraine", index1: 50, index2: 43, index3: 122, index4: 47 },
+        { country: "United Kingdom", index1: 15, index2: 11, index3: 31, index4: 22 },
+        { country: "United States", index1: 18, index2: 6, index3: 35, index4: 9 },
+        { country: "Uruguay", index1: 45, index2: 48, index3: 28, index4: 35 },
+        { country: "Uzbekistan", index1: 84, index2: 88, index3: 30, index4: 72 },
+        { country: "Vanuatu", index1: 87, index2: 116, index3: 48, index4: 101 },
+        { country: "Venezuela", index1: 103, index2: 106, index3: 87, index4: 110 },
+        { country: "Vietnam", index1: 69, index2: 56, index3: 20, index4: 125 },
+        { country: "West Bank and Gaza", index1: 122, index2: 110, index3: 104, index4: 127 },
+        { country: "Yemen, Rep.", index1: 160, index2: 159, index3: 129, index4: 144 },
+        { country: "Zambia", index1: 114, index2: 124, index3: 39, index4: 118 },
+        { country: "Zimbabwe", index1: 124, index2: 127, index3: 124, index4: 130 },
+    ];
+
+    function renderTable(dataArray) {
+        const tbody = document.getElementById("table-body");
+        if (!tbody) {
+            console.error("Élément avec l'ID 'table-body' introuvable.");
+            return;
+        }
+        tbody.innerHTML = "";
+        dataArray.forEach(row => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+          <td>${row.country}</td>
+          <td>${row.index1}</td>
+          <td>${row.index2}</td>
+          <td>${row.index3}</td>
+          <td>${row.index4}</td>
+        `;
+            tbody.appendChild(tr);
+        });
+    }
+
+    let currentSortKey = "";
+    let ascending = true;
+
+    function sortTable(key) {
+        if (key === currentSortKey) {
+            ascending = !ascending;
+        } else {
+            ascending = true;
+            currentSortKey = key;
+        }
+
+        const sorted = [...data].sort((a, b) => {
+            if (typeof a[key] === "string") {
+                return ascending
+                    ? a[key].localeCompare(b[key])
+                    : b[key].localeCompare(a[key]);
+            } else {
+                return ascending ? a[key] - b[key] : b[key] - a[key];
+            }
+        });
+
+        renderTable(sorted);
+    }
+
+    // Initial render une fois que la page est chargée
+    document.addEventListener("DOMContentLoaded", () => {
+        renderTable(data);
+    });
+</script>
 
 <footer>
     <div class ="logofooter"><img src="/Img/logosite.png" alt="Logo"></div>
@@ -220,5 +290,6 @@
     </nav>
     <p>© 2025 TONNEAU ET PROFFIT</p>
 </footer>
+<script src="../JS/script.js"></script>
 </body>
 </html>

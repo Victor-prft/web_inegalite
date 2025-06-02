@@ -365,7 +365,6 @@ svg path:hover {
     background-color: #222;
 }
 
-<!--Page index-->
 
 .index-section {
     text-align: center;
@@ -462,4 +461,26 @@ svg path:hover {
     .importance-index h2 {
         font-size: 1.5em;
     }
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+th {
+    background-color: #eee;
+    cursor: pointer;
+}
+th.sort-asc::after {
+    content: " \2191";
+}
+th.sort-desc::after {
+    content: " \2193";
+
 }
