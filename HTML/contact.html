@@ -4,6 +4,7 @@
     <title>Contact - Projet Inégalité</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../CSS/style.css">
+
 </head>
 
 <body>
@@ -20,25 +21,44 @@
             </div>
         </div>
     </header>
-    
-    <main class="contact-container">
-        <h1>Contactez-nous</h1>
-        
-        <section class="project-info">
-            <h2>Projet Inégalité</h2>
-            <p>Un projet web sur les inégalités mondiales réalisé par Benjamin Tonneau et Victor Proffit.</p>
-        </section>
-        
-        <section class="team-members">
-            <div class="member">
-                <p>Email: benjamin.tonneau@efrei.net</p>
+
+    <section class="approbations">
+        <h2>Qui nous sommes ?</h2>
+        <div class="approbations-container">
+            <div class="approbation">
+                <img src="../Img/vi.JPEG" id="photo_victor" alt="Victor">
+                <p class="description_approbation">Développeur<br><span class="nom">Victor Proffit</span></p>
             </div>
-            
-            <div class="member">
-                <p>Email: victor.proffit@efrei.net</p>
+            <div class="approbation">
+                <img src="../Img/benjamin_contact.png" id="photo_benjamin" alt="Arthur">
+                <p class="description_approbation">Développeur<br><span class="nom">Benjamin Tonneau</span></p>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+
+
+    <section class="contact-section">
+        <h1>Nous contacter</h1>
+        <div class="contact-container">
+            <form class="contact-form" id="contactForm">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Sujet</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" >Envoyer</button>
+            </form>
+            <img src="../Img/formulaire_contact.png" alt = "logo" id="image_formulaire_contact">
+        </div>
+    </section>
 
     <footer>
         <div class ="logofooter"><img src="/Img/logosite.png" alt="Logo"></div>
@@ -50,5 +70,6 @@
         </nav>
         <p>© 2025 TONNEAU ET PROFFIT</p>
     </footer>
+    <script src="../JS/script.js"></script>
 </body>
 </html>

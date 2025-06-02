@@ -125,4 +125,42 @@ document.addEventListener('DOMContentLoaded', function() {
     if (submitButton) {
         submitButton.onclick = submitQuiz;
     }
+})
+
+const tooltip = document.getElementById('tooltip');
+
+const data = {
+    FR: "France : 68 millions d'habitants",
+    US: "USA : 331 millions d'habitants",
+    CN: "Chine : 1,4 milliard d'habitants"
+};
+
+document.querySelectorAll('svg path').forEach(country => {
+    country.addEventListener('mousemove', (e) => {
+        const id = country.id;
+        tooltip.style.display = 'block';
+        tooltip.innerText = data[id] || "Aucune donnée";
+        tooltip.style.left = (e.pageX + 10) + 'px';
+        tooltip.style.top = (e.pageY + 10) + 'px';
+    });
+
+
+    country.addEventListener('mouseleave', () => {
+        tooltip.style.display = 'none';
+    });
+});
+
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault(); // empêche le rechargement
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    // Affiche une alerte avec les infos du formulaire
+    alert(`Merci ${name} !\n\nVotre message a bien été envoyé :\n\nSujet : ${subject}\nMessage : ${message}`);
+
+    // Tu peux aussi ici vider le formulaire :
+    // e.target.reset();
 });
